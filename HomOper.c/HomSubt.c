@@ -1,4 +1,4 @@
-//res = a - b
+// res = a - b
 
 void HomSubt(LweSample* res, const LweSample* a, const LweSample* b, const int length, const TFheGateBootstrappingCloudKeySet* bk) {
 

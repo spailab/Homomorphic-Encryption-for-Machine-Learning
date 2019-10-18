@@ -1,4 +1,4 @@
-void HomEye(LweSample* res, LweSample* a[10][10], const int N, const int length, const TFheGateBootstrappingCloudKeySet* bk){
+void HomEye(LweSample* res, const LweSample* a[10][10], const int N, const int length, const TFheGateBootstrappingCloudKeySet* bk){
 
 	LweSample* a[N][N];
 

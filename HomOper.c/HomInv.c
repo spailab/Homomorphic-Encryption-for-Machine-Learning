@@ -1,10 +1,10 @@
 void HomInv(LweSample* res, const LweSample ** a, const int N, const int length, const TFheGateBootstrappingCloudKeySet* bk){
 	LweSample* c = new_gate_bootstrapping_ciphertext_array(length, bk->params);
 	LweSample* d = new_gate_bootstrapping_ciphertext_array(length, bk->params);
-    LweSample* L = new_gate_bootstrapping_ciphertext_array(length, bk->params);
-    LweSample* K = new_gate_bootstrapping_ciphertext_array(length, bk->params);              
+        LweSample* L = new_gate_bootstrapping_ciphertext_array(length, bk->params);
+        LweSample* K = new_gate_bootstrapping_ciphertext_array(length, bk->params);              
 	LweSample* f = new_gate_bootstrapping_ciphertext_array(2, bk->params);	    
-    LweSample* A = new_gate_bootstrapping_ciphertext_array(length, bk->params);
+        LweSample* A = new_gate_bootstrapping_ciphertext_array(length, bk->params);
 
     //find dimensions of input matrix
     int C = N; int r = N;

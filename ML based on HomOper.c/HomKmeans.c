@@ -1,3 +1,4 @@
+# k-means 
 void HomKmeans(LweSample* res[10], const LweSample* a[100], const LweSample* u[10], const int length, const int N, const int k, const TFheGateBootstrappingCloudKeySet* bk){
 
 

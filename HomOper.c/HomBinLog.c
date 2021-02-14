@@ -1,6 +1,6 @@
 // log base 2 of b
 // binary logarithm
-
+//////////////// Binary log ///////////////////////
 void HomBinLog(LweSample* res, const LweSample* b, const int length, const TFheGateBootstrappingCloudKeySet* bk){
 
 	LweSample* temp = new_gate_bootstrapping_ciphertext_array(2, bk->params);

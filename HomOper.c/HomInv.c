@@ -1,3 +1,4 @@
+/////////////////////// Inverse Matrix ////////////////////////////////
 void HomInv(LweSample* res, const LweSample ** a, const int N, const int length, const TFheGateBootstrappingCloudKeySet* bk){
 	LweSample* c = new_gate_bootstrapping_ciphertext_array(length, bk->params);
 	LweSample* d = new_gate_bootstrapping_ciphertext_array(length, bk->params);

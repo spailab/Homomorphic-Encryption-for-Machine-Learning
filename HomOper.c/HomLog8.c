@@ -1,4 +1,5 @@
 // log base a of b
+//
 
 void HomLog8(LweSample* res, const LweSample* b, const int length, const TFheGateBootstrappingCloudKeySet* bk){
 

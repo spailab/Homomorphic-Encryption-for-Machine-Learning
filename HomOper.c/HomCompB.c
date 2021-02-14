@@ -1,5 +1,6 @@
 // if a > b then res = E(1)
 // else res = E(0)
+//
 
 void HomCompB(LweSample* res, const LweSample* a, const LweSample* b, const int length, const TFheGateBootstrappingCloudKeySet* bk) {
 

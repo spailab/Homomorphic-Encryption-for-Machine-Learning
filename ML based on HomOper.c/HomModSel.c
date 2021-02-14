@@ -1,3 +1,4 @@
+# Model selection
 void HomModSel(LweSample* res[2], LweSample **x, LweSample **y, const int N, const int length, const TFheGateBootstrappingCloudKeySet* bk){
 	LweSample* sy = new_gate_bootstrapping_ciphertext_array(length, bk->params);
 	LweSample* sxy = new_gate_bootstrapping_ciphertext_array(length, bk->params);

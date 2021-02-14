@@ -3,7 +3,7 @@
 // length * length = length
 // res1 = Quotient
 // res2 = Reminder
-
+/////////////////////  Division  //////////////////////////////
 void HomDiv(LweSample* res1, LweSample* res2, const LweSample* a, const LweSample* b, const int length, const TFheGateBootstrappingCloudKeySet* bk) {
 	
 	LweSample* temp = new_gate_bootstrapping_ciphertext_array(3, bk->params);

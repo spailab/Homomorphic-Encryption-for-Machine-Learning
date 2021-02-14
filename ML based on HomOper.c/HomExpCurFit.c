@@ -1,3 +1,4 @@
+# Exponential Curve Fit
 void HomExpCurFit(LweSample* res[2], LweSample **x, LweSample **y, const int N, const int length, const TFheGateBootstrappingCloudKeySet* bk){
 	LweSample* sumx = new_gate_bootstrapping_ciphertext_array(length, bk->params);
 	LweSample* sumy = new_gate_bootstrapping_ciphertext_array(length, bk->params);

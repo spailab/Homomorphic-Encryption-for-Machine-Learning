@@ -14,18 +14,20 @@ void HomMultiReal(LweSample* res, const LweSample* a, const LweSample* b, const 
 	HomAbs(B, b, length, bk);
 	for(int i = 0; i < length; i++){
 		bootsAND(&AA[i], &A[i], &B[0], bk);}
-	HomLShift(AA, AA, length, length/2 - 1, bk);	
+	HomLShift(AA, AA, length, length/2, bk);	
+
+
 	
 	for(int i = 1; i < length-1; i++){
-		if(i < length/2 - 1){
-			HomLShift(C, A, length, length/2-1-i, bk);
+		if(i < length/2){
+			HomLShift(C, A, length, length/2-i, bk);
 
 			for(int j = 0; j < length; j++)
 				bootsAND(&D[j], &C[j], &B[i], bk);
 
 			HomAdd(AA, AA, D, length, bk);
 		}
-		else if(i == length/2 - 1){
+		else if(i == length/2){
 			for(int j = 0; j < length; j++)
 				bootsAND(&D[j], &A[j], &B[i], bk);
 
@@ -33,7 +35,7 @@ void HomMultiReal(LweSample* res, const LweSample* a, const LweSample* b, const 
 		}
 
 		else {
-			HomRShift(C, A, length, i-length/2 + 1, bk);
+			HomRShift(C, A, length, i-length/2, bk);
 			for(int j = 0; j < length; j++){
 				bootsAND(&D[j], &C[j], &B[i], bk);}
 
